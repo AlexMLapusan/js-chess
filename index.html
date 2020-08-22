@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Chess</title>
+        <link rel="stylesheet" href="chess-style.css">
+    </head>
+    <body>
+        <div class = "team-announcer">
+            <div class = "team-announcer-white active">WHITE</div>
+            <div class = "team-announcer-black">BLACK</div>
+        </div>
+        <div class = "move-history"></div>
+        <button class = "restart">New Game</button>
+        <button class = "undo">Undo</button>
+        <div class = "multiplayer">
+            <input type = "text" class = "game-id"/>
+            <button class = "join-game">Join room by ID</button>
+            <input type = "text" class = "new-game-name" placeholder="New room name"/>
+            <button class = "create-game">Create and join room</button>
+            <button class = "quit-game">Quit room</button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+        crossorigin="anonymous"></script>
+        <script src="chess.js"></script>
+    </body>
+</html>
